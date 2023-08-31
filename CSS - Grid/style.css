@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+.container {
+    border: 6px solid black;
+    display: grid;
+    /* grid-template-columns: repeat(3,minmax(200px, 1fr)); */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* height: 800px; */
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template: repeat(3,200px)/ repeat(3, 200px);
+    /* column-gap: 20px;
+    row-gap: 30px; */
+    /* gap: 30px 10px; */
+    
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: end end; */
+    
+    /* justify-content: space-evenly; */
+    /* align-content: space-around; */
+    /* place-content: center; */
+
+    /* grid-auto-flow: column;
+    grid-auto-columns: 100px;
+    grid-auto-rows: 200px; */
+}
+
+.grid-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;align-items: center;
+}
+
+.item-1 {
+    background-color: #451952;
+    /* grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2; */
+    grid-column: 1 / span 2 ;
+    grid-row: 1 / span 2 ;
+}
+
+.item-2 {
+    background-color: #F1916D;
+    /* justify-self: center;
+    align-self: center; */
+    place-self: center ;
+}
+
+.item-3 {
+    background-color: #1B3358;
+}
+
+.item-4 {
+    background-color: #86ABCF;
+}
+.item-5 {
+    background-color: #0F969C;
+}
+
+.item-6 {
+    background-color: #DFB6B2;
+}
+
+.item-7 {
+    background-color: #BD83B8;
+}
+
+.item-8 {
+    background-color: #384358;
+}
+
+.item-9 {
+    background-color: #F39F5A;
+}
